@@ -1,0 +1,21 @@
+Product ID,Product Name,Region,Sales Channel,Units Sold,Revenue,Profit Margin
+P001,Executive Leadership Program,North America,Online,120,"$1,200,000",25%
+P002,Strategic Marketing,Europe,In-Person,80,"$720,000",20%
+P003,Data-Driven Decision Making,Asia,Partner,50,"$350,000",15%
+P004,Innovation & Design Thinking,North America,Online,100,"$800,000",22%
+P005,Financial Management for Executives,Europe,In-Person,60,"$540,000",18%
+P006,Leading Change & Transformation,Asia,Partner,40,"$280,000",12%
+P007,Negotiation & Influence,North America,Online,90,"$630,000",20%
+P008,Strategic Human Resource Management,Europe,In-Person,70,"$490,000",16%
+P009,Building High-Performing Teams,Asia,Partner,30,"$210,000",10%
+P010,Digital Transformation Strategy,North America,Online,110,"$880,000",24%
+P011,Executive Leadership Program,Europe,Online,105,"$1,050,000",23%
+P012,Strategic Marketing,Asia,In-Person,75,"$675,000",19%
+P013,Data-Driven Decision Making,North America,Partner,45,"$315,000",14%
+P014,Innovation & Design Thinking,Europe,Online,95,"$760,000",21%
+P015,Financial Management for Executives,Asia,In-Person,55,"$495,000",17%
+P016,Leading Change & Transformation,North America,Partner,35,"$245,000",11%
+P017,Negotiation & Influence,Europe,Online,85,"$595,000",19%
+P018,Strategic Human Resource Management,Asia,In-Person,65,"$455,000",15%
+P019,Building High-Performing Teams,North America,Partner,25,"$175,000",9%
+P020,Digital Transformation Strategy,Europe,Online,100,"$800,000",23%
