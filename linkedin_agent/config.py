@@ -38,12 +38,28 @@ class AgentConfig:
         project_root = Path(__file__).parent.parent
         dotenv_path = project_root / ".env"
 
+        # Debug: Print paths to help troubleshoot
+        import sys
+        print(f"DEBUG: Python executable: {sys.executable}", file=sys.stderr)
+        print(f"DEBUG: Current file: {__file__}", file=sys.stderr)
+        print(f"DEBUG: Project root: {project_root}", file=sys.stderr)
+        print(f"DEBUG: Looking for .env at: {dotenv_path}", file=sys.stderr)
+        print(f"DEBUG: .env exists: {dotenv_path.exists()}", file=sys.stderr)
+
         # Load .env file if it exists
         if dotenv_path.exists():
+            print(f"DEBUG: Loading .env from: {dotenv_path}", file=sys.stderr)
             load_dotenv(dotenv_path)
         else:
             # Fallback to searching from current directory
+            print(f"DEBUG: .env not found at {dotenv_path}, using default search", file=sys.stderr)
             load_dotenv()
+
+        # Debug: Check if API key was loaded
+        api_key_loaded = os.getenv("ANTHROPIC_API_KEY")
+        print(f"DEBUG: ANTHROPIC_API_KEY loaded: {bool(api_key_loaded)}", file=sys.stderr)
+        if api_key_loaded:
+            print(f"DEBUG: API key starts with: {api_key_loaded[:10]}...", file=sys.stderr)
 
         # Required settings
         anthropic_api_key = os.getenv("ANTHROPIC_API_KEY")
