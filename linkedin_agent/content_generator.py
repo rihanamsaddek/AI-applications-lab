@@ -56,7 +56,13 @@ Format your response as a structured business profile."""
             ]
         )
 
-        analysis = response.content[0].text
+        # Extract text blocks (filter out thinking blocks)
+        text_blocks = [block for block in response.content if block.type == "text"]
+        if text_blocks:
+            analysis = text_blocks[0].text
+        else:
+            analysis = "Unable to analyze documents"
+
         print("  ✓ Business analysis complete")
         return analysis
 
@@ -118,7 +124,12 @@ Provide:
             ]
         )
 
-        content = response.content[0].text
+        # Extract text blocks (filter out thinking blocks)
+        text_blocks = [block for block in response.content if block.type == "text"]
+        if text_blocks:
+            content = text_blocks[0].text
+        else:
+            content = "Unable to generate post"
 
         # Split into post and reasoning
         if "Strategy:" in content or "Explanation:" in content or "Reasoning:" in content:
