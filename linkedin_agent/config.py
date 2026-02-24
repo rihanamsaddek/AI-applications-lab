@@ -1,6 +1,7 @@
 """Configuration management for LinkedIn Marketing Agent."""
 
 import os
+from pathlib import Path
 from dataclasses import dataclass
 from typing import Optional, Tuple, List
 from dotenv import load_dotenv
@@ -33,7 +34,16 @@ class AgentConfig:
         Returns:
             AgentConfig instance with values from .env file
         """
-        load_dotenv()
+        # Find .env file relative to project root (parent of linkedin_agent directory)
+        project_root = Path(__file__).parent.parent
+        dotenv_path = project_root / ".env"
+
+        # Load .env file if it exists
+        if dotenv_path.exists():
+            load_dotenv(dotenv_path)
+        else:
+            # Fallback to searching from current directory
+            load_dotenv()
 
         # Required settings
         anthropic_api_key = os.getenv("ANTHROPIC_API_KEY")
