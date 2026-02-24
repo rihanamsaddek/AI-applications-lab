@@ -2,7 +2,7 @@
 
 import os
 from dataclasses import dataclass
-from typing import Optional
+from typing import Optional, Tuple, List
 from dotenv import load_dotenv
 
 
@@ -52,7 +52,7 @@ class AgentConfig:
             num_posts=int(os.getenv("NUM_POSTS", "1"))
         )
 
-    def validate(self) -> tuple[bool, list[str]]:
+    def validate(self) -> Tuple[bool, List[str]]:
         """Validate the configuration.
 
         Returns:

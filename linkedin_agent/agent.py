@@ -4,7 +4,7 @@ import sys
 import json
 from pathlib import Path
 from datetime import datetime
-from typing import Optional
+from typing import Optional, List, Dict
 import colorama
 from colorama import Fore, Style
 
@@ -46,7 +46,7 @@ class LinkedInMarketingAgent:
         num_posts: int = 1,
         preview_only: bool = False,
         save_to_file: bool = True
-    ) -> list[dict]:
+    ) -> List[Dict]:
         """Run the complete marketing agent workflow.
 
         Args:
@@ -158,7 +158,7 @@ class LinkedInMarketingAgent:
         print(f"{Fore.CYAN}└───────────────────────────────────────────────────────────────────┘{Style.RESET_ALL}")
         print(f"\n{Fore.MAGENTA}Strategy: {post['reasoning'][:150]}...{Style.RESET_ALL}\n")
 
-    def _save_posts_to_file(self, posts: list[dict], suffix: str = ""):
+    def _save_posts_to_file(self, posts: List[Dict], suffix: str = ""):
         """Save generated posts to a JSON file.
 
         Args:
