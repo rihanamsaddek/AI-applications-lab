@@ -1,0 +1,39 @@
+# Secrets — never commit these
+.env
+*.env
+*secret*
+*credentials*.json
+service-account*.json
+
+# Runtime data (keep directory structure, ignore content)
+data/database/*
+data/images/*
+data/logs/*
+data/cache/*
+!data/**/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+dist/
+build/
+.eggs/
+
+# Test artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+*.xml
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db

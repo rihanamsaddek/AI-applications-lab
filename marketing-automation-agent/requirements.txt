@@ -1,0 +1,27 @@
+# Marketing Automation Agent Dependencies
+
+# Core AI
+anthropic>=0.39.0
+google-generativeai>=0.8.0
+
+# Configuration & utilities
+python-dotenv>=1.0.0
+pyyaml>=6.0
+colorama>=0.4.6
+
+# Content fetching (RSS uses stdlib xml.etree.ElementTree — no feedparser needed)
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+
+# Image processing
+Pillow>=10.0.0
+
+# Optional: Twitter fetching
+tweepy>=4.14.0
+
+# Optional: YouTube fetching
+google-api-python-client>=2.100.0
+
+# Testing
+pytest>=7.4.0
+pytest-mock>=3.11.0

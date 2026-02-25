@@ -1,0 +1,15 @@
+# Marketing Automation Agent — Cron Configuration
+#
+# To install: run `crontab -e` and paste the appropriate line below.
+# Adjust paths to match your installation.
+#
+# Format: minute hour day-of-month month day-of-week command
+
+# Run every weekday (Mon-Fri) at 9:00 AM
+0 9 * * 1-5 cd /path/to/AI-applications-lab/marketing-automation-agent && /path/to/venv/bin/python -m orchestration.daily_agent >> data/logs/cron_$(date +\%Y\%m\%d).log 2>&1
+
+# Run every day at 9:00 AM (including weekends)
+# 0 9 * * * cd /path/to/AI-applications-lab/marketing-automation-agent && /path/to/venv/bin/python -m orchestration.daily_agent >> data/logs/cron_$(date +\%Y\%m\%d).log 2>&1
+
+# Preview mode (generate posts but don't publish — useful for testing)
+# 0 9 * * * cd /path/to/AI-applications-lab/marketing-automation-agent && /path/to/venv/bin/python -m orchestration.daily_agent --preview-only >> data/logs/cron_$(date +\%Y\%m\%d).log 2>&1
