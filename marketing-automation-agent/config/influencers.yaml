@@ -1,0 +1,67 @@
+influencers:
+  - name: "Lenny Rachitsky"
+    platforms:
+      twitter: "lennysan"
+      youtube: "@lennyspodcast"
+      rss: "https://www.lennysnewsletter.com/feed"
+
+  - name: "Greg Isenberg"
+    platforms:
+      twitter: "gregisenberg"
+      youtube: "@GregIsenberg"
+
+  - name: "Nick Saraev"
+    platforms:
+      twitter: "nicksaraev"
+
+  - name: "Grace Leung"
+    platforms:
+      twitter: "grace_leung_ai"
+
+  - name: "Jeff Su"
+    platforms:
+      youtube: "@JeffSu"
+
+  - name: "Nate Herk"
+    platforms:
+      twitter: "nateherk"
+
+  - name: "Dan Martell"
+    platforms:
+      youtube: "@DanMartell"
+      twitter: "danmartell"
+
+  - name: "Liam Ottley"
+    platforms:
+      youtube: "@LiamOttley"
+      twitter: "liamottley"
+
+  - name: "Your AI Workflow"
+    platforms:
+      youtube: "@YourAIWorkflow"
+      twitter: "youraiworkflow"
+
+  - name: "Ethan Mollick"
+    platforms:
+      twitter: "emollick"
+      rss: "https://www.oneusefulthing.org/feed"
+
+  - name: "Google Cloud Tech"
+    platforms:
+      youtube: "@GoogleCloudTech"
+      twitter: "googlecloud"
+      rss: "https://cloudblog.withgoogle.com/rss/"
+
+  - name: "Anthropic"
+    platforms:
+      twitter: "AnthropicAI"
+      rss: "https://www.anthropic.com/news.rss"
+
+  - name: "OpenAI"
+    platforms:
+      twitter: "OpenAI"
+      rss: "https://openai.com/news/rss.xml"
+
+  - name: "Jack Clark (Import AI)"
+    platforms:
+      rss: "https://importai.substack.com/feed"
